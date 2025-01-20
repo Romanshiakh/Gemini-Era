@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.nav-bar {
+    /* position: relative; */
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    background-color: black;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.nav-bar a {
+    color: white;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 13px;
+
+
+}
+
+.nav-bar button {
+    background-color: white;
+    padding: 0.515rem;
+    border: 1em solid black;
+    border-radius: 50px;
+    margin-left: 15rem;
+}
+
+
+
+.nav-bar button a {
+    color: black;
+
+}
+
+.nav-bar button a:hover {
+    text-decoration: none;
+
+}
+
+
+
+
+.nav-bar a:hover {
+    /* position: absolute; */
+
+    text-decoration: underline;
+}
+
+
+.container img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+.container h1 {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    color: white;
+    font-size: 7rem;
+
+}
+
+.container p {
+
+    position: absolute;
+    color: white;
+    top: 3.4rem;
+    left: 22%;
+    font-size: 20px;
+
+}
+
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+
+.side-menu {
+    flex: 30%;
+    background-color: #c75050;
+    padding: 20px;
+
+
+}
+
+
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.footer-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .content .nav-bar {
+        flex-direction: column;
+
+    }
+}
